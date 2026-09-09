@@ -1,11 +1,24 @@
 # Validation Receipt Ledger
 
-Runtime evidence belongs here. Do not replace `PENDING` with `PASS` until the relevant contract has actually been compiled, deployed, and exercised in Remix.
+Runtime evidence belongs here. Source compilation and runtime behavior are tracked separately so the repository never claims more than the evidence proves.
+
+## Source compilation receipt
+
+- Status: `PASS`
+- Validator: GitHub Actions — `Solidity Compile`
+- Run ID: `34306972098`
+- Commit: `c8c2d06595ba351fa33271134ea6d74f9cc77e44`
+- Compiler package: `solc@0.8.30`
+- Result: all three selected Solidity contracts compiled successfully
+- Workflow conclusion: `success`
+- Completed at (UTC): `2026-09-09T03:24:14Z`
+
+This validates Solidity compilation only. Remix deployment and behavioral receipts below remain pending until they are actually executed.
 
 ## Task 1 — Simple Storage
 
-- Status: `PENDING`
-- Compiler version: `PENDING`
+- Runtime status: `PENDING`
+- Remix compiler version: `PENDING`
 - Environment/network: `PENDING`
 - Contract address: `PENDING`
 - Deployment transaction: `PENDING`
@@ -16,8 +29,8 @@ Runtime evidence belongs here. Do not replace `PENDING` with `PASS` until the re
 
 ## Task 3 — Polling System
 
-- Status: `PENDING`
-- Compiler version: `PENDING`
+- Runtime status: `PENDING`
+- Remix compiler version: `PENDING`
 - Environment/network: `PENDING`
 - Contract address: `PENDING`
 - Deployment transaction: `PENDING`
@@ -31,8 +44,8 @@ Runtime evidence belongs here. Do not replace `PENDING` with `PASS` until the re
 
 ## Task 4 — Crypto Lock
 
-- Status: `PENDING`
-- Compiler version: `PENDING`
+- Runtime status: `PENDING`
+- Remix compiler version: `PENDING`
 - Environment/network: `PENDING`
 - Contract address: `PENDING`
 - Deployment transaction: `PENDING`
@@ -44,4 +57,4 @@ Runtime evidence belongs here. Do not replace `PENDING` with `PASS` until the re
 
 ## Evidence rule
 
-Receipts should describe observations from actual execution. A source-code review, expected result, or planned test is not a runtime receipt.
+A successful compile proves the source is syntactically accepted by the recorded compiler. It does not prove deployment or runtime behavior. Runtime fields become `PASS` only after the corresponding Remix interaction is observed and captured.
