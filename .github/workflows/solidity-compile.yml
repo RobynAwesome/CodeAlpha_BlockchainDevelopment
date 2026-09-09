@@ -1,0 +1,34 @@
+name: Solidity Compile
+
+on:
+  push:
+    paths:
+      - "**/*.sol"
+      - ".github/workflows/solidity-compile.yml"
+  pull_request:
+    paths:
+      - "**/*.sol"
+      - ".github/workflows/solidity-compile.yml"
+  workflow_dispatch:
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Solidity compiler
+        run: npm install --no-save solc@0.8.30
+
+      - name: Compile selected CodeAlpha contracts
+        run: |
+          mkdir -p build/task-1 build/task-3 build/task-4
+          ./node_modules/.bin/solcjs --bin --abi task-1-simple-storage/SimpleStorage.sol -o build/task-1
+          ./node_modules/.bin/solcjs --bin --abi task-3-polling-system/PollingSystem.sol -o build/task-3
+          ./node_modules/.bin/solcjs --bin --abi task-4-crypto-lock/CryptoLock.sol -o build/task-4
