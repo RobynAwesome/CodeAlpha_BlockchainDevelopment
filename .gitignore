@@ -1,0 +1,19 @@
+# Local/editor files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Node tooling if used locally
+node_modules/
+package-lock.json
+
+# Solidity build outputs
+artifacts/
+cache/
+build/
+out/
+
+# Environment files
+.env
+.env.*
