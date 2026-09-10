@@ -1,0 +1,10 @@
+
+
+  Task 4 ΓÇö CryptoLock
+    ΓêÜ deploys and accepts a deposit with unlock timestamp (2994ms)
+    ΓêÜ reverts early withdrawal while still locked (186ms)
+    ΓêÜ withdraws after unlock and clears deposit state (103ms)
+
+
+  3 passing (3s)
+

@@ -1,0 +1,10 @@
+
+
+  Task 1 ΓÇö SimpleStorage
+    ΓêÜ deploys with initial stored value 0 (5510ms)
+    ΓêÜ increments and verifies value increased (59ms)
+    ΓêÜ decrements and verifies value decreased (94ms)
+
+
+  3 passing (6s)
+

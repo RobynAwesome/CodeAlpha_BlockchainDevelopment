@@ -1,0 +1,29 @@
+CODEALPHA RUNTIME RECEIPT — Task 1 SimpleStorage
+================================================
+Timestamp (UTC): 2026-09-09T21:59:34Z
+Command executed: npx hardhat test test/SimpleStorage.js
+Working directory: C:\Users\rkhol\CodeAlpha_BlockchainDevelopment
+Contract tested: SimpleStorage (contracts/SimpleStorage.sol; source of truth task-1-simple-storage/SimpleStorage.sol)
+Compiler: Solidity 0.8.30 via Hardhat 2.22.18
+Environment: Hardhat Network (local EVM)
+
+Test cases:
+1. Deploy + verify initial stored value is 0
+2. Increment twice + verify value becomes 2
+3. Decrement twice + verify value returns to 0
+
+Result: PASS (3 passing)
+
+Relevant output:
+```
+  Task 1 — SimpleStorage
+    √ deploys with initial stored value 0
+    √ increments and verifies value increased
+    √ decrements and verifies value decreased
+
+  3 passing
+```
+
+Notes:
+- Local Hardhat runtime evidence only.
+- Does not replace Remix VM validation required by the CodeAlpha brief.

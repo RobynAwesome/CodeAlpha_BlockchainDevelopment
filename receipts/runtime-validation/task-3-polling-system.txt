@@ -1,0 +1,33 @@
+CODEALPHA RUNTIME RECEIPT — Task 3 PollingSystem
+================================================
+Timestamp (UTC): 2026-09-09T21:59:34Z
+Command executed: npx hardhat test test/PollingSystem.js
+Working directory: C:\Users\rkhol\CodeAlpha_BlockchainDevelopment
+Contract tested: PollingSystem (contracts/PollingSystem.sol; source of truth task-3-polling-system/PollingSystem.sol)
+Compiler: Solidity 0.8.30 via Hardhat 2.22.18
+Environment: Hardhat Network (local EVM)
+
+Test cases:
+1. Deploy + createPoll("Best Blockchain Platform?", ["Ethereum","Hyperledger"], 60) + getPoll metadata
+2. Vote from one address + verify vote count / hasAddressVoted
+3. Reject duplicate vote from same address ("Address has already voted")
+4. Reject vote after deadline ("Voting has ended")
+5. getWinningOption after deadline (lowest index wins ties)
+
+Result: PASS (5 passing)
+
+Relevant output:
+```
+  Task 3 — PollingSystem
+    √ deploys and creates a poll with valid options
+    √ votes from one address and verifies vote count
+    √ rejects a second vote from the same address
+    √ rejects voting after the deadline
+    √ returns winner after deadline
+
+  5 passing
+```
+
+Notes:
+- Local Hardhat runtime evidence only.
+- Does not replace Remix VM validation required by the CodeAlpha brief.

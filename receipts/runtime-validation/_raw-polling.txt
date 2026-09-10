@@ -1,0 +1,12 @@
+
+
+  Task 3 ΓÇö PollingSystem
+    ΓêÜ deploys and creates a poll with valid options (2756ms)
+    ΓêÜ votes from one address and verifies vote count (107ms)
+    ΓêÜ rejects a second vote from the same address (162ms)
+    ΓêÜ rejects voting after the deadline (117ms)
+    ΓêÜ returns winner after deadline (103ms)
+
+
+  5 passing (3s)
+

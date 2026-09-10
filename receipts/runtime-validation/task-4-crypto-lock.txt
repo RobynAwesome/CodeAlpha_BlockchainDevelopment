@@ -1,0 +1,29 @@
+CODEALPHA RUNTIME RECEIPT — Task 4 CryptoLock
+=============================================
+Timestamp (UTC): 2026-09-09T21:59:34Z
+Command executed: npx hardhat test test/CryptoLock.js
+Working directory: C:\Users\rkhol\CodeAlpha_BlockchainDevelopment
+Contract tested: CryptoLock (contracts/CryptoLock.sol; source of truth task-4-crypto-lock/CryptoLock.sol)
+Compiler: Solidity 0.8.30 via Hardhat 2.22.18
+Environment: Hardhat Network (local EVM)
+
+Test cases:
+1. Deploy + deposit(60) with 1 ETH + verify amount/unlock timestamp via getMyDeposit
+2. Early withdraw reverts with "Deposit is still locked"
+3. Advance time past unlock + withdraw + verify amount/unlockTime cleared to 0
+
+Result: PASS (3 passing)
+
+Relevant output:
+```
+  Task 4 — CryptoLock
+    √ deploys and accepts a deposit with unlock timestamp
+    √ reverts early withdrawal while still locked
+    √ withdraws after unlock and clears deposit state
+
+  3 passing
+```
+
+Notes:
+- Local Hardhat runtime evidence only.
+- Does not replace Remix VM validation required by the CodeAlpha brief.

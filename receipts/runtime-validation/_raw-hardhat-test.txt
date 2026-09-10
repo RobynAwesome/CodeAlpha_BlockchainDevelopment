@@ -1,0 +1,22 @@
+
+
+  Task 4 ΓÇö CryptoLock
+    ΓêÜ deploys and accepts a deposit with unlock timestamp (6873ms)
+    ΓêÜ reverts early withdrawal while still locked (270ms)
+    ΓêÜ withdraws after unlock and clears deposit state (156ms)
+
+  Task 3 ΓÇö PollingSystem
+    ΓêÜ deploys and creates a poll with valid options (219ms)
+    ΓêÜ votes from one address and verifies vote count (190ms)
+    ΓêÜ rejects a second vote from the same address (66ms)
+    ΓêÜ rejects voting after the deadline (48ms)
+    ΓêÜ returns winner after deadline (63ms)
+
+  Task 1 ΓÇö SimpleStorage
+    ΓêÜ deploys with initial stored value 0 (40ms)
+    ΓêÜ increments and verifies value increased
+    ΓêÜ decrements and verifies value decreased
+
+
+  11 passing (8s)
+

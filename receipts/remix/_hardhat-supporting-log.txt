@@ -1,0 +1,25 @@
+Downloading compiler 0.8.30
+Compiled 3 Solidity files successfully (evm target: paris).
+
+
+  Task 4 — CryptoLock
+    √ deploys and accepts a deposit with unlock timestamp (28272ms)
+    √ reverts early withdrawal while still locked (184ms)
+    √ withdraws after unlock and clears deposit state (92ms)
+
+  Task 3 — PollingSystem
+    √ deploys and creates a poll with valid options (135ms)
+    √ votes from one address and verifies vote count (97ms)
+    √ rejects a second vote from the same address (132ms)
+    √ rejects voting after the deadline (101ms)
+    √ returns winner after deadline (86ms)
+
+  Task 1 — SimpleStorage
+    √ deploys with initial stored value 0
+    √ increments and verifies value increased
+    √ decrements and verifies value decreased (51ms)
+
+
+  11 passing (29s)
+
+NOTE: Supporting local Hardhat evidence only. Does NOT replace Remix VM screenshots for CodeAlpha submission.
